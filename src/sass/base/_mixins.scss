@@ -1,0 +1,50 @@
+//{ @include flex(j-c:space-between, a-i:center); }
+@mixin flex($j-c: space-between, $a-i: center) {
+  display: flex;
+  justify-content: $j-c;
+  align-items: $a-i;
+}
+
+//{ @include block-image(w-100px, h-100px); }
+@mixin block-image($weight: 100px, $height: 100px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  width: $weight;
+  height: $height;
+}
+
+//{ @include centerTL(T-50%, L-50%); }
+@mixin centerTL($top: 50%, $left: 50%) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-50%, -50%);
+}
+
+//{ @include centerBR(B-50%, R-50%); }
+@mixin centerBR($bottom: 50%, $right: 50%) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+  transform: translate(-50%, -50%);
+}
+
+//{ @include centerX(T-0%, B-auto); }
+@mixin centerX($top: auto, $bottom: auto) {
+  position: absolute;
+  left: 50%;
+  top: $top;
+  bottom: $bottom;
+  transform: translateX(-50%);
+}
+
+//{ @include centerY(L-50%, R-auto); }
+@mixin centerY($left: auto, $right: auto) {
+  position: absolute;
+  top: 50%;
+  left: $left;
+  right: $right;
+  transform: translateY(-50%);
+}
