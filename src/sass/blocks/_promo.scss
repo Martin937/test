@@ -1,0 +1,54 @@
+.promo {
+  min-height: 820px;
+  .title {
+    &-section {
+      color: $main;
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+  .button {
+    margin: 78px auto 0;
+  }
+}
+.roundtable {
+  position: relative;
+  height: 50vh;
+  background: url(../img/head.jpg) center 80% / cover no-repeat;
+  &__title {
+    @include centerTL();
+    // width: 45%;
+    // height: 48%;
+    width: 620px;
+    height: 190px;
+    @include flex(center, center);
+    background-color: $white;
+    border: 5px solid $main;
+    border-radius: 5px;
+  }
+}
+
+.sponsored {
+  margin: 30px auto 0;
+  @include flex();
+  width: 705px;
+  &__logo {
+    width: 230px;
+    height: 67px;
+    @include flex(center, center);
+    background-color: $green;
+    a {
+      display: block;
+      color: $white;
+      font-size: 26px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+  &__desc {
+    width: 400px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

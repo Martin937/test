@@ -1,0 +1,50 @@
+.schedule {
+  min-height: 1265px;
+  background-color: $main;
+  padding: 75px 0 60px;
+  color: $white;
+  .line {
+    margin: 90px auto 85px;
+    background-color: $white;
+  }
+  .title-section {
+    margin-bottom: 40px;
+  }
+  .title-section,
+  .overview,
+  .agenda {
+    padding: 0 40px;
+  }
+}
+.overview {
+  @include flex();
+  &__desc {
+    width: calc(50% - 50px);
+  }
+  p:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.agenda {
+  @include flex(flex-start, flex-start);
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  &:nth-child(2),
+  &:nth-child(3) {
+    margin-bottom: 35px;
+  }
+  &__time {
+    margin-right: 15px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  &__desc {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+  span {
+    font-weight: 600;
+  }
+}

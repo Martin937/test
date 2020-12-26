@@ -1,10 +1,77 @@
-@import 'libs/normalize';
-@import 'libs/font';
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/animations';
-// @import 'blocks/general';
-@import 'blocks/general';
-@import 'blocks/header';
-@import 'blocks/footer';
-@import 'blocks/media';
+@import "libs/normalize";
+@import "libs/font";
+@import "base/variables";
+@import "base/mixins";
+@import "base/animations";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $fontMain;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 66px;
+  font-weight: 300;
+  span {
+    text-transform: uppercase;
+  }
+  &-section {
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+.container {
+  max-width: 90vw;
+  // max-width: 1170px;
+  margin: 0 auto;
+}
+.button {
+  width: 445px;
+  height: 85px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  color: $white;
+  background-color: $main;
+  border: none;
+  border-radius: 85px;
+  display: block;
+  cursor: pointer;
+  &:hover {
+    background-color: $white;
+    color: $main;
+  }
+}
+.line {
+  width: 100%;
+  height: 2px;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+}
+
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/schedule";
+@import "blocks/events";
+@import "blocks/footer";
+@import "blocks/media";

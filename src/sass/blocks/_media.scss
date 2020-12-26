@@ -1,902 +1,616 @@
-@media (max-width: 1300px) {
-    //----------------------------------
-    // header
-    //----------------------------------
-    .mainmenu ul {
-        font-size: 11px;
-    }
-    .header {
-        &__contacts {
-            font-size: 0.9em;
-        }
-    }
-    .messages {
-        &__mess {
-            font-size: 0.8em;
-        }
-        &__clock {
-            font-size: 1.1em;
-        }
-    }
-}
 //----------------------------------
 // 1200
 //----------------------------------
 @media (max-width: 1200px) {
-    //----------------------------------
-    // header
-    //----------------------------------
-    .mainmenu ul li a {
-        padding: 13px 16px;
+  //----------------------------------
+  // events
+  //----------------------------------
+  .tabcontents,
+  .tabs {
+    width: calc(50% - 40px);
+  }
+  .tab {
+    width: calc(100% / 2 - 15px);
+  }
+  .avatar {
+    &_detail {
+      width: 100px;
     }
-    //----------------------------------
-    // development
-    //----------------------------------
-    .box__list {
-        width: 100%;
+  }
+  //----------------------------------
+  // footer
+  //----------------------------------
+  .footer {
+    min-height: 410px;
+    &__wrap {
+      height: 380px;
     }
-    //----------------------------------
-    // direct
-    //----------------------------------
-    .direct {
-        &__desc {
-            &:last-child {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-            }
-        }
+    .button {
+      width: 90%;
+      font-size: 18px;
     }
-    //----------------------------------
-    // modal
-    //----------------------------------
-    .popup {
-        width: 60vw;
-        &-form {
-            text-align: center;
-            &-header {
-                font-size: 27px;
-            }
-            &__input,
-            &__btn {
-                width: 100%;
-            }
-            &__btn {
-                margin: 45px auto 0;
-            }
-            &__label {
-                margin-top: 10px;
-                font-size: 15px;
-            }
-        }
-    }
+  }
 }
-//----------------------------------
-// 1100
-//----------------------------------
-@media (max-width: 1100px) {
-    //----------------------------------
-    // header
-    //----------------------------------
-    .mainmenu ul {
-        font-size: 10px;
-    }
-    .header {
-        &__container {
-            &_flex {
-                justify-content: space-around;
-            }
-        }
 
-        &__contacts {
-            .header__tel,
-            span {
-                display: none;
-            }
-            img {
-                display: block;
-                width: 40px;
-                height: auto;
-            }
-        }
-    }
-    //----------------------------------
-    // footer
-    //----------------------------------
-    .footer {
-        &__container {
-            &_grid {
-                grid-gap: 11px;
-            }
-        }
-        &__link {
-            i {
-                font-size: 1.4em;
-            }
-        }
-    }
-    //----------------------------------
-    // modal
-    //----------------------------------
-    .popup {
-        &-form {
-            &-header {
-                line-height: 30px;
-                font-size: 26px;
-            }
-        }
-    }
-    //----------------------------------
-    // direct
-    //----------------------------------
-    .direct {
-        &__box {
-            padding: 40px;
-        }
-    }
-    //----------------------------------
-    // about
-    //----------------------------------
-    .about {
-        &__desc {
-            width: calc(100% / 2 - 10px);
-            margin-bottom: 20px;
-        }
-    }
-    .level {
-        &__item {
-            width: calc(100% / 2 - 10px);
-            margin-bottom: 20px;
-            &::after {
-                content: '';
-                display: block;
-                margin: 0 auto;
-                width: 90%;
-                height: 1px;
-                margin-top: 10px;
-                background-color: $gold;
-            }
-        }
-    }
-    .wave {
-        width: calc(100% / 4);
-        margin-bottom: 30px;
-        &_inner {
-            flex-wrap: wrap;
-        }
-    }
-}
 //----------------------------------
 // 991
 //----------------------------------
 @media (max-width: 991px) {
-    //----------------------------------
-    // header
-    //----------------------------------
-    .mainmenu {
-        font-size: 85%;
-        height: 30px;
-        ul {
-            height: 30px;
-            li {
-                a {
-                    padding: 10px;
-                }
-            }
-        }
+  //----------------------------------
+  // header
+  //----------------------------------
+  .caption {
+    width: 183px;
+    padding: 23px 33px;
+    font-size: 34px;
+    line-height: 34px;
+  }
+  .nav {
+    width: 410px;
+    margin-right: 50px;
+    &__link {
+      font-size: 18px;
     }
-    .logo {
-        width: 100px;
-        height: 30px;
-        &__img {
-            @include block-image(25px, 25px);
-            margin-right: 10px;
-        }
-        &__title {
-            font-size: 0.8em;
-            font-weight: 700;
-        }
+  }
+  //----------------------------------
+  // promo
+  //----------------------------------
+  .promo {
+    min-height: 770px;
+    .button {
+      margin: 55px auto 0;
     }
-    .messages__clock {
-        font-size: 0.9em;
+  }
+  .roundtable {
+    height: 40vh;
+    &__title {
+      width: 450px;
+      height: 168px;
     }
-    .title {
-        font-size: 2.2em;
-        &_section {
-            font-size: 1.7em;
-        }
+  }
+  .title {
+    font-size: 28px;
+    line-height: 56px;
+    &-section {
+      font-size: 24px;
     }
-    //----------------------------------
-    // footer
-    //----------------------------------
-    .footer {
-        font-size: 0.6em;
-        line-height: 18px;
-        &__container {
-            &_grid {
-                grid-template-columns: repeat(12, 5vw);
-            }
-        }
-        &__link {
-            i {
-                font-size: 1.4em;
-            }
-        }
-        &__contacts {
-            height: 35px;
-            width: 85%;
-        }
+  }
+  .sponsored {
+    width: 500px;
+    &__logo {
+      width: 160px;
+      height: 60px;
     }
-    .logo_footer {
-        font-size: 17px;
+    &__desc {
+      width: 302px;
+      font-size: 14px;
     }
-    .button_footer {
-        height: 30px;
-        width: 85%;
+  }
+  .button {
+    width: 400px;
+    height: 75px;
+    font-size: 22px;
+  }
+  //----------------------------------
+  // schedule
+  //----------------------------------
+  .schedule {
+    padding: 70px 0 55px;
+    .line {
+      margin: 80px auto 75px;
     }
-    //----------------------------------
-    // advantages
-    //----------------------------------
-    .mess {
-        font-size: 1em;
-        img {
-            width: 40px;
-        }
+    .title-section {
+      margin-bottom: 30px;
     }
-    //----------------------------------
-    // development
-    //----------------------------------
-    .box {
-        &_grid {
-            grid-gap: 15px;
-        }
-        &__feature {
-            padding: 15px 15px 35px;
-        }
-        &__desc {
-            margin-top: 5px;
-            font-size: 0.6em;
-        }
-        &__list {
-            font-size: 0.8em;
-        }
-        li:not([class]) {
-            font-size: 0.85em;
-        }
+  }
+  .overview {
+    &__desc {
+      width: calc(50% - 40px);
     }
-    .layout,
-    .frontend {
-        .box {
-            &__feature {
-                width: calc(100% / 3 - 10px);
-            }
-        }
+    p {
+      font-size: 16px;
     }
-    //----------------------------------
-    // direct
-    //----------------------------------
-    .direct {
-        &__box {
-            flex-wrap: wrap;
-            font-size: 0.9em;
-        }
-        &__desc {
-            width: 100%;
-            &:first-child {
-                padding-right: 0px;
-            }
-        }
-        &__feature {
-            ul {
-                padding-left: 10px;
-            }
-        }
-        img {
-            margin-top: 20px;
-        }
+    p:not(:last-child) {
+      margin-bottom: 20px;
     }
-    //----------------------------------
-    // about
-    //----------------------------------
-    .about,
-    .portfolio,
-    .comment {
-        padding: 110px 0 50px;
-        .title_section,
-        .mess {
-            width: 100%;
-            text-align: center;
-        }
+  }
+  .agenda {
+    &:not(:last-child) {
+      margin-bottom: 50px;
     }
-    .sliders {
-        height: 30vh;
-        margin-top: 33px;
+    &__time {
+      font-size: 32px;
     }
-    .slider-box {
-        transform: scale3d(0.7, 0.7, 0.7);
+    &__desc {
+      font-size: 18px;
     }
-    .carousel-item {
-        width: 100%;
-        height: 120px;
+    &__desc:not(:last-child) {
+      margin-bottom: 14px;
     }
-    .nowandthen {
-        width: calc(100% / 3 - 10px);
+  }
+  //----------------------------------
+  // events
+  //----------------------------------
+  .events {
+    .line {
+      margin: 68px auto;
     }
-    //----------------------------------
-    // modal
-    //----------------------------------
-    .popup {
-        &-form {
-            &-header {
-                font-size: 24px;
-            }
-            &__label {
-                margin-top: 16px;
-                font-size: 16px;
-            }
-            &__input,
-            &__btn {
-                height: 45px;
-            }
-        }
+  }
+  .tabcontents,
+  .tabs,
+  .tabcontents-other,
+  .tabs-other {
+    width: calc(50% - 30px);
+  }
+  .tabcontent {
+    &__speaker {
+      flex-direction: column;
+      padding: 35px 18px;
+      width: 100%;
     }
+    &__desc {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .speaker {
+    width: 100%;
+    margin-bottom: 20px;
+    &__name {
+      text-align: center;
+      font-size: 12px;
+      span {
+        font-size: 14px;
+      }
+    }
+    &__desc {
+      width: 100%;
+      text-align: justify;
+    }
+  }
+  .avatar {
+    &_detail {
+      width: 100%;
+    }
+  }
+  .tab-other {
+    width: calc(100% / 2 - 24px);
+    margin-bottom: 35px;
+  }
+  .other {
+    &__logo {
+      margin-bottom: 25px;
+    }
+    &__desc {
+      margin-top: 10px;
+    }
+  }
+  //----------------------------------
+  // footer
+  //----------------------------------
+  .footer {
+    min-height: 360px;
+    &__wrap {
+      height: 340px;
+    }
+    &__line {
+      height: 20px;
+    }
+    .button {
+      height: 65px;
+      font-size: 14px;
+    }
+  }
+  .message {
+    font-size: 22px;
+  }
+  .contact {
+    font-size: 18px;
+  }
 }
+
 // ----------------------------------
 // 767
 //----------------------------------
 @media (max-width: 767px) {
-    //----------------------------------
-    // header
-    //----------------------------------
-    .mainmenu {
-        display: none;
+  //----------------------------------
+  // header
+  //----------------------------------
+  .header {
+    height: 90px;
+  }
+  .caption {
+    width: 162px;
+    padding: 18px 23px;
+    line-height: 29px;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 18px;
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      margin-bottom: 4px;
+      transition: 0.5s all;
     }
-    .button_menu {
-        display: block;
-        &:hover {
-            font-size: 0.8em;
+    &_active {
+      span {
+        margin-bottom: -2px;
+        &:nth-child(1) {
+          transform: translateY(3px) rotate(-45deg);
         }
-    }
-    .mobil-menu {
-        @include flex(space-evenly, center);
-        flex-direction: column;
-        position: fixed;
-        top: -100%;
-        left: 0%;
-        width: 100vw;
-        height: 85vh;
-        padding: 20px 15px;
-        font-size: 1.1em;
-        font-weight: 700;
-        background-color: rgba(0, 0, 0, 0.8);
-        transition: 0.6s all;
-        &_active {
-            top: 100px;
-            // left: 0;
+        &:nth-child(2) {
+          display: none;
         }
-        a {
-            color: $gold;
-            text-decoration: none;
+        &:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
         }
+      }
     }
-    .header {
-        &__contacts {
-            position: static;
-            transform: none;
-            width: 80px;
-        }
-        &__container {
-            &_flex {
-                justify-content: space-between;
-            }
-        }
+  }
+  .nav {
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+    z-index: 1;
+    &_active {
+      left: 0;
     }
-    .messages__mess {
-        padding-left: 0;
+    &__link {
+      font-size: 16px;
     }
-    .messages__clock {
-        font-size: 0.85em;
-        grid-column: 9/-1;
+  }
+  .roundtable {
+    height: 30vh;
+    &__title {
+      width: 300px;
+      height: 135px;
     }
-    .title {
-        font-size: 2em;
-        &_section {
-            font-size: 1.5em;
-            text-align: center;
-            margin-top: 15px;
-        }
+  }
+  .title {
+    font-size: 18px;
+    line-height: 46px;
+    &-section {
+      font-size: 18px;
     }
-    //----------------------------------
-    // footer
-    //----------------------------------
-    .footer {
-        font-size: 0.5em;
-        line-height: 12px;
-        padding: 15px 0;
-        &__column_2 {
-            display: none;
-        }
-        &__column {
-            &_1 {
-                grid-column: 1/5;
-            }
-            &_3 {
-                grid-column: 5/9;
-                grid-row: 1/-1;
-            }
-            &_4 {
-                grid-column: 9/-1;
-                grid-row: 1/-1;
-            }
-        }
-        &__title {
-            margin-bottom: 10px;
-        }
-        &__contacts {
-            height: 29px;
-            font-size: 1.3em;
-        }
+  }
+  //----------------------------------
+  // promo
+  //----------------------------------
+  .sponsored {
+    width: 400px;
+    &__logo {
+      width: 122px;
+      height: 55px;
+      a {
+        font-size: 22px;
+      }
     }
-    .button_footer {
-        height: 25px;
+    &__desc {
+      width: 240px;
+      font-size: 12px;
     }
-    //----------------------------------
-    // advantages
-    //----------------------------------
-    .mess {
-        justify-content: center;
-        font-size: 0.9em;
+  }
+  .promo {
+    min-height: 540px;
+    .title-section {
+      margin-top: 40px;
     }
-    .plus {
-        font-size: 0.7em;
-        &__row {
-            padding: 10px 5px;
-            min-height: 60px;
-        }
+    .button {
+      margin: 45px auto 0;
     }
-    .row {
-        &__elem {
-            &:first-child {
-                width: 39%;
-            }
-            &:last-child {
-                width: 59%;
-            }
-        }
+  }
+  .button {
+    width: 300px;
+    height: 55px;
+    font-size: 18px;
+  }
+  //----------------------------------
+  // schedule
+  //----------------------------------
+  .schedule .agenda,
+  .schedule .overview,
+  .schedule .title-section {
+    padding: 0 30px;
+  }
+  .schedule {
+    padding: 60px 0 45px;
+    min-height: 1117px;
+    .line {
+      margin: 65px auto 55px;
     }
-    //----------------------------------
-    // consultation-form
-    //----------------------------------
-    .consultation-form input {
-        width: 100%;
+  }
+  .overview {
+    &__desc {
+      width: calc(50% - 30px);
     }
-    //----------------------------------
-    // development
-    //----------------------------------
-    .box {
-        &_grid {
-            grid-template-rows: repeat(4, 1fr);
-            grid-gap: 10px;
-        }
-        &__list {
-            width: 80%;
-            font-size: 0.9em;
-        }
-        li:not([class]) {
-            font-size: 0.9em;
-        }
+    p {
+      font-size: 14px;
     }
-    .layout,
-    .frontend {
-        .box {
-            &__feature {
-                width: 100%;
-                margin-bottom: 15px;
-                // padding: 15px 15px 35px;
-            }
-            // &__desc {
-            //   margin-top: 5px;
-            //   font-size: 0.6em;
-            // }
-            // &__list {
-            //   font-size: 0.8em;
-            // }
-        }
+    p:not(:last-child) {
+      margin-bottom: 15px;
     }
-    .one-page,
-    .multi-page {
-        .box {
-            &__desc {
-                font-size: 0.7em;
-                line-height: 18px;
-            }
-            &__feature {
-                &_1 {
-                    grid-column: 1/9;
-                    grid-row: 1/2;
-                }
-                &_2 {
-                    grid-column: 1/9;
-                    grid-row: 2/3;
-                }
-                &_3 {
-                    grid-column: 1/9;
-                    grid-row: 3/4;
-                }
-                &_4 {
-                    grid-column: 9/-1;
-                    grid-row: 1/-1;
-                    .box__item {
-                        list-style-type: none;
-                        // font-size: 0.9em;
-                    }
-                }
-                &_5 {
-                    grid-column: 1/9;
-                    grid-row: 4/-1;
-                }
-                &_6,
-                &_7 {
-                    display: none;
-                }
-            }
-        }
+  }
+  .agenda {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
-    //----------------------------------
-    // direct
-    //----------------------------------
-    .direct {
-        &__box {
-            font-size: 0.8em;
-        }
+    &__time {
+      font-size: 28px;
     }
-    //----------------------------------
-    // about
-    //----------------------------------
-    .slider-box {
-        top: -14vh;
-        transform: scale3d(0.5, 0.6, 0.5);
+    &__desc {
+      font-size: 16px;
     }
-    .nowandthen {
-        width: calc(100% / 2 - 10px);
-        height: 20vw;
+    &__desc:not(:last-child) {
+      margin-bottom: 10px;
     }
-    .wave {
-        width: calc(100% / 3);
-        margin: 30px;
+  }
+
+  //----------------------------------
+  // events
+  //----------------------------------
+  .events {
+    padding: 40px 0 35px;
+    .line {
+      margin: 55px auto;
     }
-    .set {
-        &__inputer {
-            width: calc(50% - 20px);
-        }
-        &__textarea {
-            width: 50%;
-        }
+    .button {
+      margin: 60px auto 0;
     }
-    .comment-form__label {
-        font-size: 0.7em;
+  }
+  .info {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+  .tabcontents,
+  .tabs,
+  .tabcontents-other,
+  .tabs-other {
+    width: 100%;
+  }
+  .tabcontent {
+    &__desc {
+      font-size: 14px;
     }
-    //----------------------------------
-    // modal
-    //----------------------------------
-    .popup {
-        width: 60vw;
-        &-form {
-            &-header {
-                font-size: 20px;
-            }
-            &__label {
-                margin-top: 14px;
-                font-size: 14px;
-            }
-            &__btn {
-                margin: 40px auto 0;
-            }
-        }
+    &__speaker {
+      font-size: 12px;
     }
+  }
+  .tab {
+    width: calc(100% / 3 - 15px);
+    &-other {
+      width: calc(100% / 3 - 24px);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  .speaker {
+    @include flex();
+    &__name {
+      width: calc(50% - 20px);
+    }
+  }
+  .avatar {
+    &_detail {
+      width: calc(50% - 20px);
+      height: 140px;
+    }
+  }
+  .other {
+    &__logo {
+      margin: 0 auto 20px;
+    }
+    &__desc {
+      margin-top: 5px;
+    }
+  }
+  //----------------------------------
+  // footer
+  //----------------------------------
+  .footer {
+    min-height: 270px;
+    &__wrap {
+      height: 255px;
+      padding: 30px 0 40px;
+    }
+    &__line {
+      height: 15px;
+    }
+  }
+  .message {
+    font-size: 18px;
+  }
+  .contact {
+    font-size: 12px;
+  }
 }
+
 //----------------------------------
 // 575
 //----------------------------------
 @media (max-width: 575px) {
-    //----------------------------------
-    // header
-    //----------------------------------
-    .logo {
-        width: 80px;
-        height: 25px;
-        &__img {
-            @include block-image(20px, 20px);
-            margin-right: 5px;
-        }
-        &__title {
-            font-size: 0.75em;
-            font-weight: 700;
-        }
-    }
-    .mobil-menu {
-        font-size: 0.8em;
-    }
-    .header__contacts {
-        width: 50px;
-    }
-    .messages {
-        font-size: 0.8em;
-        &__mess {
-            text-align: center;
-            grid-column: 1/-1;
-            margin-left: 20px;
-        }
-        &__clock {
-            display: none;
-        }
-    }
-    .title {
-        font-size: 1.5em;
-        &_section {
-            font-size: 1em;
-        }
-    }
-    .specification {
-        font-size: 0.8em;
-    }
-    .page-name {
-        padding: 10px 0 15px;
-        min-height: 80px;
-    }
-    //----------------------------------
-    // footer
-    //----------------------------------
-    .footer {
-        font-size: 0.3em;
-        line-height: 7px;
-        padding: 10px 0;
-        &__container {
-            &_grid {
-                grid-gap: 5px;
-            }
-        }
-        &__column {
-            &_1 {
-                grid-column: 1/7;
-            }
-            &_3 {
-                display: none;
-            }
-            &_4 {
-                grid-column: 8/-1;
-                grid-row: 1/-1;
-            }
-        }
-        &__title {
-            margin-bottom: 5px;
-        }
-    }
-    .logo {
-        &_footer {
-            font-size: 14px;
-            margin-bottom: 3px;
-        }
+  //----------------------------------
+  // header
+  //----------------------------------
+  .nav {
+    width: 75%;
+  }
+  .caption {
+    padding: 18px 30px;
+    font-size: 30px;
+  }
+  .hamburger {
+    right: 30px;
+    width: 26px;
+    height: 16px;
+  }
+  //----------------------------------
+  // promo
+  //----------------------------------
+  .promo {
+    .title-section {
+      margin-top: 30px;
     }
     .button {
-        font-size: 0.7em;
-        &_footer {
-            height: 15px;
-            font-size: 1.3em;
-        }
-        &_menu {
-            width: 80px;
-            height: 25px;
-            font-size: 0.6em;
-            &:hover {
-                font-size: 0.6em;
-            }
-        }
+      margin: 35px auto 0;
     }
-    //----------------------------------
-    // advantages
-    //----------------------------------
-    .mess {
-        font-size: 0.7em;
+  }
+  .roundtable {
+    &__title {
+      width: 200px;
+      height: 118px;
     }
-    .plus {
-        // font-size: 0.7em;
-        &__row {
-            flex-direction: column;
-            &:after {
-                content: '';
-                display: block;
-                height: 1px;
-                width: 90%;
-                background: #fff5b2;
-                margin: 3px auto;
-            }
-        }
+  }
+  .title {
+    line-height: 28px;
+    &-section {
+      font-size: 16px;
     }
-    .row {
-        &__elem {
-            &:first-child,
-            &:last-child {
-                width: 100%;
-            }
-            &:last-child {
-                order: 1;
-            }
-        }
+  }
+  .sponsored {
+    flex-direction: column;
+    width: 300px;
+    &__logo {
+      height: 45px;
+      a {
+        font-size: 16px;
+      }
     }
-    //----------------------------------
-    // consultation-form
-    //----------------------------------
-    .consultation-form input {
-        font-size: 0.7em;
+    &__desc {
+      text-align: center;
+      margin-top: 10px;
     }
-    //----------------------------------
-    // development
-    //----------------------------------
-    .about {
-        &__desc {
-            width: 100%;
-            margin-bottom: 15px;
-            font-size: 0.8em;
-        }
+  }
+  .button {
+    width: 230px;
+    height: 50px;
+    font-size: 14px;
+  }
+  //----------------------------------
+  // schedule
+  //----------------------------------
+  .schedule .agenda,
+  .schedule .overview,
+  .schedule .title-section {
+    padding: 0 15px;
+  }
+  .schedule {
+    padding: 45px 0 35px;
+    min-height: 1043px;
+    .title-section {
+      margin-bottom: 20px;
+      text-align: center;
     }
-    h3 {
-        text-align: center;
+    .line {
+      margin: 45px auto 40px;
     }
-    .box {
-        &_grid {
-            grid-template-rows: repeat(4, 0.5fr) 1fr;
-            grid-gap: 5px;
-            grid-row-gap: 15px;
-        }
-        &__list {
-            width: 80%;
-            font-size: 0.8em;
-        }
-        li:not([class]) {
-            font-size: 0.8em;
-        }
+  }
+  .overview {
+    flex-wrap: wrap;
+    &__desc {
+      width: calc(100%);
+      text-align: justify;
     }
-    .layout,
-    .frontend,
-    .one-page,
-    .multi-page {
-        padding: 100px 0 30px;
+    &__desc:not(:last-child) {
+      margin-bottom: 15px;
     }
-    .one-page,
-    .multi-page {
-        .box {
-            &__feature {
-                &_1 {
-                    grid-column: 1/-1;
-                    grid-row: 1/2;
-                }
-                &_2 {
-                    grid-column: 1/-1;
-                    grid-row: 2/3;
-                }
-                &_3 {
-                    grid-column: 1/-1;
-                    grid-row: 3/4;
-                }
-                &_4 {
-                    grid-column: 1/-1;
-                    grid-row: 5/6;
-                    .box__item {
-                        list-style-type: circle;
-                    }
-                }
-                &_5 {
-                    grid-column: 1/-1;
-                    grid-row: 4/5;
-                }
-            }
-        }
+    p {
+      font-size: 12px;
     }
-    //----------------------------------
-    // direct
-    //----------------------------------
-    .direct {
-        &__box {
-            font-size: 0.7em;
-            padding: 20px;
-            text-align: justify;
-        }
-        h3 {
-            margin-bottom: 10px;
-        }
+    p:not(:last-child) {
+      margin-bottom: 10px;
     }
+  }
+  .agenda {
+    flex-direction: column;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &__time {
+      font-size: 24px;
+    }
+    &__desc {
+      font-size: 14px;
+    }
+    &__desc:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  //----------------------------------
+  // events
+  //----------------------------------
+  .events {
+    .line {
+      margin: 40px auto;
+    }
+    .title-section {
+      text-align: center;
+    }
+    .button {
+      margin: 40px auto 0;
+    }
+  }
 
-    //----------------------------------
-    // about
-    //----------------------------------
-    .sliders {
-        height: 16vh;
-        margin-top: 10px;
-    }
-    .slider-box {
-        top: -7vh;
-        transform: scale3d(0.3, 0.3, 0.3);
-    }
-    .nowandthen {
-        width: 100%;
-        height: 40vw;
-    }
-    .wave {
-        width: calc(100% - 10px);
-        margin-bottom: 30px;
-    }
-    .level {
-        font-size: 0.8em;
-        &__list {
-            list-style-position: outside;
-        }
-        &__item {
-            width: 100%;
-        }
-        progress {
-            width: 45%;
-        }
-    }
-    .set {
-        &__inputer,
-        &__textarea {
-            width: 100%;
-        }
-    }
-    .comment-form {
-        &__input {
-            font-size: 0.7em;
-            margin-bottom: 10px;
-            padding: 5px;
-            &:not(:last-child) {
-                margin-bottom: 10px;
-            }
-        }
-        &__label {
-            font-size: 0.4em;
-        }
-        &__btn {
-            height: 30px;
-        }
-    }
-    .set__button {
-        margin-top: 5px;
-        input[type='checkbox'] {
-            margin: 0;
-        }
-    }
+  .tab {
+  }
+  .tab,
+  .tab-other {
+    width: calc(100% / 2 - 10px);
+    font-size: 12px;
+    line-height: 16px;
+  }
 
-    //----------------------------------
-    // modal
-    //----------------------------------
-    .popup {
-        width: 75vw;
-        &-form {
-            padding: 20px;
-            &-header {
-                font-size: 14px;
-                line-height: 20px;
-            }
-            &__label {
-                margin-top: 10px;
-                font-size: 10px;
-            }
-            &__input,
-            &__btn {
-                height: 30px;
-            }
-            &__input {
-                font-size: 14px;
-            }
-            &__btn {
-                margin: 30px auto 0;
-                font-size: 0.6em;
-            }
-        }
-        &-close {
-            font-size: 2.5em;
-            top: -18px;
-        }
+  .speaker {
+    &__name {
+      width: 50%;
+      span {
+        font-size: 12px;
+      }
     }
+  }
+  .avatar {
+    height: 90px;
+    margin-bottom: 14px;
+  }
+  //----------------------------------
+  // footer
+  //----------------------------------
+  .footer {
+    &__wrap {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+    .button {
+      margin: 0 auto 15px;
+      width: 60%;
+      height: 50px;
+      font-size: 12px;
+    }
+  }
+  .conference {
+    width: 100%;
+  }
+  .contacts {
+    width: 80%;
+  }
+  .contact,
+  .message {
+    width: 100%;
+    text-align: center;
+  }
 }
