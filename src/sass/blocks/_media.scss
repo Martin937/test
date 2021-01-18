@@ -1,228 +1,604 @@
 //----------------------------------
-// 1200
+//                              1400
+//----------------------------------
+@media (max-width: 1400px) {
+  //----------------------------------
+  //          event
+  //----------------------------------
+  .tabcontent__speaker {
+    display: block;
+  }
+  .speaker {
+    float: left;
+  }
+  .name span {
+    font-size: 15.5px;
+  }
+  .av {
+    &-1 {
+      margin-top: -20px;
+      transform: scale(1.1);
+    }
+    &-4 {
+      margin-top: -8px;
+    }
+    &-5 {
+      margin-top: -14px;
+    }
+    &-6 {
+      margin-top: -5px;
+    }
+    &-8 {
+      margin-top: -8px;
+    }
+    &-9 {
+      margin-top: 30px;
+    }
+  }
+
+  //----------------------------------
+  //          footer
+  //----------------------------------
+  .button_footer {
+    width: 90%;
+    font-size: 25px;
+  }
+}
+//----------------------------------
+//                              1300
+//----------------------------------
+@media (max-width: 1300px) {
+  //----------------------------------
+  //          roundtable
+  //----------------------------------
+  .roundtable {
+    height: 410px;
+    &__title {
+      width: 686px;
+    }
+  }
+  //----------------------------------
+  //          schedule
+  //----------------------------------
+  .overview__desc {
+    padding-right: 50px;
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+  //----------------------------------
+  //          event
+  //----------------------------------
+  .tabcontents,
+  .tabcontents-other {
+    padding-right: 70px;
+  }
+  .tabs,
+  .tabs-other {
+    padding-left: 0px;
+  }
+  // .avatar {
+  //   margin-bottom: 15px;
+  // }
+  .name span {
+    font-size: 14px;
+  }
+  .tab-other:nth-child(3n + 2) .other__name,
+  .tab-other:nth-child(3n + 3) .other__name {
+    padding-right: 0px;
+  }
+}
+//----------------------------------
+//                              1200
 //----------------------------------
 @media (max-width: 1200px) {
   //----------------------------------
-  // events
+  //          header
   //----------------------------------
-  .tabcontents,
-  .tabs {
-    width: calc(50% - 40px);
+  .header {
+    height: 100px;
+    padding-right: 35px;
   }
-  .tab {
-    width: calc(100% / 2 - 15px);
-  }
-  .avatar {
-    &_detail {
-      width: 100px;
-    }
-  }
-  //----------------------------------
-  // footer
-  //----------------------------------
-  .footer {
-    min-height: 410px;
-    &__wrap {
-      height: 380px;
-    }
-    .button {
-      width: 90%;
-      font-size: 18px;
-    }
-  }
-}
-
-//----------------------------------
-// 991
-//----------------------------------
-@media (max-width: 991px) {
-  //----------------------------------
-  // header
-  //----------------------------------
   .caption {
-    width: 183px;
-    padding: 23px 33px;
-    font-size: 34px;
-    line-height: 34px;
+    width: 237px;
+    padding: 14px 35px 0 35px;
+    font-size: 40px;
+    line-height: 38px;
   }
-  .nav {
-    width: 410px;
-    margin-right: 50px;
-    &__link {
-      font-size: 18px;
-    }
-  }
-  //----------------------------------
-  // promo
-  //----------------------------------
-  .promo {
-    min-height: 770px;
-    .button {
-      margin: 55px auto 0;
-    }
+  .nav__link {
+    margin-left: 30px;
+    font-size: 20px;
   }
   .roundtable {
-    height: 40vh;
+    height: 302px;
     &__title {
-      width: 450px;
-      height: 168px;
+      width: 438px;
+      height: 150px;
+      padding-top: 27px;
     }
   }
+  //----------------------------------
+  //          general
+  //----------------------------------
   .title {
     font-size: 28px;
-    line-height: 56px;
-    &-section {
-      font-size: 24px;
-    }
+    line-height: 1;
   }
-  .sponsored {
-    width: 500px;
-    &__logo {
-      width: 160px;
-      height: 60px;
-    }
-    &__desc {
-      width: 302px;
-      font-size: 14px;
-    }
+  .title-section {
+    font-size: 26px;
   }
   .button {
-    width: 400px;
-    height: 75px;
-    font-size: 22px;
-  }
-  //----------------------------------
-  // schedule
-  //----------------------------------
-  .schedule {
-    padding: 70px 0 55px;
-    .line {
-      margin: 80px auto 75px;
+    width: 345px;
+    height: 67px;
+    font-size: 20px;
+    &_sponsored {
+      bottom: 61px;
     }
-    .title-section {
-      margin-bottom: 30px;
+    &_event {
+      margin-left: calc(50% - 172px);
     }
-  }
-  .overview {
-    &__desc {
-      width: calc(50% - 40px);
-    }
-    p {
-      font-size: 16px;
-    }
-    p:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
-  .agenda {
-    &:not(:last-child) {
-      margin-bottom: 50px;
-    }
-    &__time {
-      font-size: 32px;
-    }
-    &__desc {
+    &_footer {
       font-size: 18px;
     }
-    &__desc:not(:last-child) {
-      margin-bottom: 14px;
-    }
   }
   //----------------------------------
-  // events
+  //          sponsored
   //----------------------------------
-  .events {
-    .line {
-      margin: 68px auto;
+  .sponsored {
+    min-height: 352px;
+    padding-bottom: 61px;
+    &__info {
+      width: 580px;
     }
-  }
-  .tabcontents,
-  .tabs,
-  .tabcontents-other,
-  .tabs-other {
-    width: calc(50% - 30px);
-  }
-  .tabcontent {
-    &__speaker {
-      flex-direction: column;
-      padding: 35px 18px;
-      width: 100%;
-    }
-    &__desc {
-      font-size: 16px;
-      line-height: 22px;
-    }
-  }
-  .speaker {
-    width: 100%;
-    margin-bottom: 20px;
-    &__name {
-      text-align: center;
-      font-size: 12px;
-      span {
-        font-size: 14px;
+    &__logo {
+      width: 30%;
+      height: 60px;
+      margin-right: 32px;
+      a {
+        font-size: 26px;
+        line-height: 61px;
       }
     }
     &__desc {
-      width: 100%;
+      width: 60%;
+      font-size: 13px;
+    }
+  }
+  //----------------------------------
+  //          schedule
+  //----------------------------------
+  .schedule {
+    padding: 75px 0 75px 0;
+  }
+  .overview {
+    &__desc {
+      margin-top: 40px;
+      margin-bottom: 75px;
+      padding-right: 28px;
+      font-size: 18px;
+      line-height: 28px;
+      &:last-child {
+        padding-left: 28px;
+      }
+      p:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .agenda {
+    margin-top: 75px;
+    &__row {
+      margin-top: 43px;
+      &:nth-child(4) {
+        margin-top: 54px;
+      }
+      &:nth-child(5),
+      &:nth-child(6) {
+        margin-top: 68px;
+      }
+    }
+    &__time {
+      font-size: 38px;
+    }
+    &__desc {
+      padding-top: 4px;
+      font-size: 20px;
+      p:not(:last-child) {
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  //----------------------------------
+  //          events
+  //----------------------------------
+  .info_speaker {
+    margin-bottom: 121px;
+  }
+  .tabcontent {
+    &__desc {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    &__speaker {
+      margin-top: 45px;
+      padding: 30px 20px;
+    }
+  }
+  .speaker {
+    margin-bottom: 15px;
+    &__desc {
+      font-size: 14px;
+      line-height: 18px;
       text-align: justify;
+      p:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+    &__avatar {
+      margin-right: 40px;
+    }
+  }
+  .close {
+    top: 8px;
+    right: 10px;
+
+    width: 25px;
+    height: 19px;
+    span {
+      width: 51px;
+      height: 6px;
+      margin-bottom: 0;
+      // margin-bottom: 2px;
+    }
+  }
+
+  .tabcontents,
+  .tabcontents-other {
+    padding-right: 55px;
+  }
+
+  .tab {
+    width: calc(100% / 2 - 16px);
+    min-height: 183px;
+    margin-bottom: 20px;
+    &:nth-child(3n + 2) {
+      margin-right: 0;
+    }
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: -53px;
+    }
+    &:nth-last-child(3) {
+      margin-bottom: 20px;
     }
   }
   .avatar {
-    &_detail {
-      width: 100%;
-    }
+    height: 130px;
   }
+  .name {
+    font-size: 15px;
+  }
+  .line_event {
+    margin: 79px auto 55px;
+  }
+
   .tab-other {
-    width: calc(100% / 2 - 24px);
-    margin-bottom: 35px;
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 30px;
+    min-height: 165px;
+    &:nth-child(3n + 2) {
+      margin-right: 0;
+    }
   }
   .other {
     &__logo {
-      margin-bottom: 25px;
+      width: 80px;
+      height: 80px;
     }
-    &__desc {
-      margin-top: 10px;
+    &__name {
+      padding-right: 0px;
+      font-size: 13px;
+      line-height: 15px;
+      span {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
     }
   }
-  //----------------------------------
-  // footer
-  //----------------------------------
+  // ----------------------------------
+  //          footer
+  // ----------------------------------
   .footer {
-    min-height: 360px;
+    min-height: 455px;
     &__wrap {
-      height: 340px;
-    }
-    &__line {
-      height: 20px;
-    }
-    .button {
-      height: 65px;
-      font-size: 14px;
+      height: 420px;
     }
   }
   .message {
-    font-size: 22px;
+    font-size: 26px;
+  }
+  .contact_mail .contact__link,
+  .contact_post .contact__addr {
+    font-size: 18px;
   }
   .contact {
-    font-size: 18px;
+    &_mail {
+      margin-top: 27px;
+    }
+    &_post {
+      margin-top: 48px;
+    }
+    &_italic {
+      margin-top: 72px;
+      font-size: 17px;
+    }
+  }
+}
+//----------------------------------
+//                              991
+//----------------------------------
+@media (max-width: 991px) {
+  //----------------------------------
+  //          header
+  //----------------------------------
+  .caption {
+    width: 12rem;
+    padding: 21px 28px 0;
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .nav__link {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  //----------------------------------
+  //          promo
+  //----------------------------------
+  .roundtable {
+    height: 235px;
+    &__title {
+      width: 338px;
+      height: 118px;
+      padding-top: 27px;
+    }
+  }
+  //----------------------------------
+  //          general
+  //----------------------------------
+  .container {
+    padding-left: 73px;
+    padding-right: 35px;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 0.9;
+    &-section {
+      font-size: 20px;
+    }
+  }
+  .button {
+    width: 270px;
+    height: 54px;
+    font-size: 17px;
+    &_sponsored {
+      bottom: 39px;
+    }
+    &_footer {
+      font-size: 14px;
+    }
+  }
+  //----------------------------------
+  //          sponsored
+  //----------------------------------
+  .sponsored {
+    min-height: 264px;
+    padding-top: 33px;
+    padding-bottom: 31px;
+    &__info {
+      width: 500px;
+      margin: 25px auto 0;
+    }
+    &__logo {
+      height: 50px;
+      a {
+        font-size: 20px;
+        line-height: 50px;
+      }
+    }
+    &__desc {
+      padding-bottom: 0;
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  //----------------------------------
+  //          schedule
+  //----------------------------------
+  .schedule {
+    padding: 45px 0 50px 0;
+  }
+  .agenda,
+  .overview {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .overview {
+    &__desc {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      padding-right: 15px;
+      font-size: 15px;
+      line-height: 22px;
+      &:last-child {
+        padding-left: 15px;
+      }
+      p:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .agenda {
+    margin-top: 45px;
+    &__row {
+      margin-top: 30px;
+      &:nth-child(4) {
+        margin-top: 39px;
+      }
+      &:nth-child(5),
+      &:nth-child(6) {
+        margin-top: 53px;
+      }
+    }
+    &__time {
+      width: 90px;
+      font-size: 30px;
+    }
+    &__desc {
+      width: calc(100% - 101px);
+      font-size: 16px;
+      line-height: 1.1;
+      p:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  //----------------------------------
+  //          events
+  //----------------------------------
+  .events {
+    padding: 45px 0 30px;
+  }
+  .info_speaker {
+    margin-bottom: 95px;
+  }
+  .tabcontents {
+    margin-top: 20px;
+  }
+  .tabcontent {
+    &__desc {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .speaker {
+    float: none;
+    margin-bottom: 35px;
+    &__desc {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &__avatar {
+      width: 100%;
+      height: 130px;
+      margin-right: 0;
+      margin-bottom: 25px;
+      img {
+        margin-top: -25px;
+        margin-left: -3px;
+        transform: scale(1);
+      }
+    }
+  }
+  .tabs {
+    margin-top: 22px;
+  }
+  .tab {
+    min-height: 164px;
+  }
+  .avatar {
+    height: 110px;
+  }
+  .name {
+    font-size: 14px;
+    span {
+      font-size: 13px;
+    }
+  }
+  .tab:nth-last-child(1),
+  .tab:nth-last-child(2) {
+    margin-bottom: -45px;
+  }
+  .line_event {
+    margin: 50px auto 45px;
+  }
+  .tabcontents-other {
+    margin-top: 20px;
+  }
+  .tabs-other {
+    min-height: 155px;
+    margin-top: 24px;
+  }
+  .other {
+    &__logo {
+      width: 70px;
+      height: 70px;
+      a {
+        font-size: 16px;
+      }
+    }
+    &__name {
+      font-size: 12px;
+      span {
+        // margin-bottom: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+  //----------------------------------
+  //          footer
+  //----------------------------------
+  .footer {
+    min-height: 380px;
+    &__wrap {
+      height: 355px;
+    }
+    &__line {
+      height: 25px;
+    }
+  }
+
+  .contacts {
+    padding: 45px 0 50px 31px;
+  }
+  .message {
+    font-size: 20px;
+  }
+  .contact_mail .contact__link,
+  .contact_post .contact__addr {
+    font-size: 16px;
+  }
+  .contact {
+    &_mail {
+      margin-top: 20px;
+    }
+    &_post {
+      margin-top: 40px;
+    }
+    &_italic {
+      margin-top: 62px;
+      font-size: 15px;
+    }
   }
 }
 
-// ----------------------------------
-// 767
+// ---------------------------------
+//                              767
 //----------------------------------
 @media (max-width: 767px) {
   //----------------------------------
-  // header
+  //          header
   //----------------------------------
   .header {
-    height: 90px;
+    height: 75px;
   }
   .caption {
-    width: 162px;
-    padding: 18px 23px;
-    line-height: 29px;
+    width: 9rem;
+    padding: 18px 23px 0;
+    font-size: 22px;
+    line-height: 22px;
   }
   .hamburger {
     display: block;
@@ -237,7 +613,7 @@
       height: 2px;
       width: 100%;
       background-color: #fff;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
       transition: 0.5s all;
     }
     &_active {
@@ -258,13 +634,12 @@
   .nav {
     position: fixed;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex(space-evenly, center);
     top: 0;
     left: -100%;
     width: 50%;
     height: 100vh;
-    padding: 20px 15px;
+    padding: 0px 10px 100px;
     background-color: rgba(0, 0, 0, 0.8);
     transition: 0.6s all;
     z-index: 1;
@@ -272,158 +647,99 @@
       left: 0;
     }
     &__link {
+      margin: 0;
       font-size: 16px;
     }
   }
-  .roundtable {
-    height: 30vh;
-    &__title {
-      width: 300px;
-      height: 135px;
-    }
-  }
-  .title {
-    font-size: 18px;
-    line-height: 46px;
-    &-section {
-      font-size: 18px;
-    }
-  }
   //----------------------------------
-  // promo
+  //          general
   //----------------------------------
-  .sponsored {
-    width: 400px;
-    &__logo {
-      width: 122px;
-      height: 55px;
-      a {
-        font-size: 22px;
-      }
-    }
-    &__desc {
-      width: 240px;
-      font-size: 12px;
-    }
-  }
-  .promo {
-    min-height: 540px;
-    .title-section {
-      margin-top: 40px;
-    }
-    .button {
-      margin: 45px auto 0;
-    }
-  }
   .button {
-    width: 300px;
-    height: 55px;
-    font-size: 18px;
-  }
-  //----------------------------------
-  // schedule
-  //----------------------------------
-  .schedule .agenda,
-  .schedule .overview,
-  .schedule .title-section {
-    padding: 0 30px;
-  }
-  .schedule {
-    padding: 60px 0 45px;
-    min-height: 1117px;
-    .line {
-      margin: 65px auto 55px;
+    margin: 0 auto;
+    padding-bottom: 2px;
+    &_footer {
+      width: 80%;
+      line-height: 18px;
     }
   }
+  //----------------------------------
+  //          promo
+  //----------------------------------
+  //----------------------------------
+  //          schedule
+  //----------------------------------
   .overview {
     &__desc {
-      width: calc(50% - 30px);
-    }
-    p {
-      font-size: 14px;
-    }
-    p:not(:last-child) {
-      margin-bottom: 15px;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0;
+      &:last-child {
+        padding-left: 0px;
+      }
     }
   }
-  .agenda {
-    &:not(:last-child) {
+  //----------------------------------
+  //          events
+  //----------------------------------
+  .info {
+    flex-direction: column;
+    &_speaker {
       margin-bottom: 30px;
     }
-    &__time {
-      font-size: 28px;
-    }
-    &__desc {
-      font-size: 16px;
-    }
-    &__desc:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-
-  //----------------------------------
-  // events
-  //----------------------------------
-  .events {
-    padding: 40px 0 35px;
-    .line {
-      margin: 55px auto;
-    }
-    .button {
-      margin: 60px auto 0;
-    }
-  }
-  .info {
-    flex-direction: column-reverse;
-    margin-top: 20px;
   }
   .tabcontents,
   .tabs,
   .tabcontents-other,
   .tabs-other {
     width: 100%;
+    padding: 0;
   }
   .tabcontent {
     &__desc {
-      font-size: 14px;
+      p:not(:last-child) {
+        margin-bottom: 15px;
+      }
     }
     &__speaker {
+      display: flex;
+      margin-top: 35px;
+      padding: 40px 20px 20px;
+    }
+  }
+  .tabcontents,
+  .tabcontents-other {
+    margin-bottom: 30px;
+  }
+  .speaker {
+    &__desc {
       font-size: 12px;
+      line-height: 16px;
+    }
+    &__avatar {
+      width: 110px;
+      height: 120px;
+      margin-right: 45px;
+      margin-bottom: 25px;
+      img {
+        margin-top: 0px;
+      }
     }
   }
   .tab {
-    width: calc(100% / 3 - 15px);
+    width: calc(100% / 3 - 16px);
+    margin-bottom: 20px;
     &-other {
-      width: calc(100% / 3 - 24px);
-      text-align: center;
-      margin-bottom: 30px;
-    }
-  }
-  .speaker {
-    @include flex();
-    &__name {
-      width: calc(50% - 20px);
-    }
-  }
-  .avatar {
-    &_detail {
-      width: calc(50% - 20px);
-      height: 140px;
-    }
-  }
-  .other {
-    &__logo {
-      margin: 0 auto 20px;
-    }
-    &__desc {
-      margin-top: 5px;
+      width: calc(100% / 3 - 20px);
+      margin-bottom: 20px;
+      min-height: 160px;
     }
   }
   //----------------------------------
-  // footer
+  //          footer
   //----------------------------------
   .footer {
-    min-height: 270px;
+    min-height: 265px;
     &__wrap {
       height: 255px;
       padding: 30px 0 40px;
@@ -432,160 +748,253 @@
       height: 15px;
     }
   }
-  .message {
-    font-size: 18px;
+  .contacts {
+    padding: 0 0 0 31px;
   }
-  .contact {
+  .message {
+    font-size: 16px;
+  }
+  .contact_mail .contact__link,
+  .contact_post .contact__addr {
     font-size: 12px;
   }
+  .contact {
+    &_mail {
+      margin-top: 15px;
+    }
+    &_post {
+      margin-top: 25px;
+    }
+    &_italic {
+      margin-top: 35px;
+      font-size: 11px;
+    }
+  }
 }
-
 //----------------------------------
-// 575
+//                              575
 //----------------------------------
 @media (max-width: 575px) {
   //----------------------------------
-  // header
+  //          header
   //----------------------------------
-  .nav {
-    width: 75%;
+  .header {
+    height: 65px;
   }
   .caption {
-    padding: 18px 30px;
-    font-size: 30px;
+    width: 8rem;
+    padding: 14px 18px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .nav {
+    &__link {
+      font-size: 14px;
+    }
   }
   .hamburger {
-    right: 30px;
-    width: 26px;
-    height: 16px;
+    width: 32px;
   }
   //----------------------------------
-  // promo
+  //          promo
   //----------------------------------
-  .promo {
-    .title-section {
-      margin-top: 30px;
-    }
-    .button {
-      margin: 35px auto 0;
-    }
-  }
   .roundtable {
     &__title {
-      width: 200px;
-      height: 118px;
+      top: 55px;
+      width: 100%;
+      height: 50%;
+      border: 2px solid #f16622;
+      border-radius: 0px;
     }
+  }
+  //----------------------------------
+  //          general
+  //----------------------------------
+  .container {
+    padding: 0 20px;
   }
   .title {
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 1.1;
     &-section {
-      font-size: 16px;
-    }
-  }
-  .sponsored {
-    flex-direction: column;
-    width: 300px;
-    &__logo {
-      height: 45px;
-      a {
-        font-size: 16px;
-      }
-    }
-    &__desc {
-      text-align: center;
-      margin-top: 10px;
+      font-size: 18px;
     }
   }
   .button {
-    width: 230px;
-    height: 50px;
-    font-size: 14px;
+    width: 60%;
+    height: 45px;
+    font-size: 12px;
+    &_sponsored {
+      bottom: 32px;
+    }
+    &_footer {
+      width: 80%;
+      margin-bottom: 15px;
+    }
   }
-  //----------------------------------
-  // schedule
-  //----------------------------------
-  .schedule .agenda,
-  .schedule .overview,
-  .schedule .title-section {
-    padding: 0 15px;
+  .line {
+    height: 2px;
+    &_event {
+      margin: 25px auto 30px;
+    }
   }
-  .schedule {
-    padding: 45px 0 35px;
-    min-height: 1043px;
-    .title-section {
-      margin-bottom: 20px;
+
+  //----------------------------------
+  //          sponsored
+  //----------------------------------
+
+  .sponsored {
+    &__info {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 20px auto 0;
+    }
+    &__logo {
+      height: 40px;
+      margin: 0;
+      a {
+        font-size: 14px;
+        line-height: 40px;
+      }
+    }
+    &__desc {
+      width: 80%;
+      margin-top: 15px;
+      font-size: 10px;
+      line-height: 12px;
       text-align: center;
     }
-    .line {
-      margin: 45px auto 40px;
-    }
+    // &__desc {
+    //   text-align: center;
+    //   margin-top: 10px;
+    // }
   }
+  //----------------------------------
+  //          schedule
+  //----------------------------------
   .overview {
-    flex-wrap: wrap;
     &__desc {
-      width: calc(100%);
+      font-size: 12px;
+      line-height: 18px;
       text-align: justify;
     }
     &__desc:not(:last-child) {
       margin-bottom: 15px;
     }
-    p {
-      font-size: 12px;
-    }
     p:not(:last-child) {
       margin-bottom: 10px;
     }
   }
+  .agenda,
+  .overview {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .agenda {
-    flex-direction: column;
-    &:not(:last-child) {
-      margin-bottom: 20px;
+    &__row {
+      flex-direction: column;
+      margin-top: 15px;
+      &:nth-child(4) {
+        margin-top: 25px;
+      }
+      &:nth-child(5),
+      &:nth-child(6) {
+        margin-top: 35px;
+      }
     }
     &__time {
+      position: relative;
       font-size: 24px;
+      &::after {
+        content: "";
+        display: block;
+        width: 80vw;
+        height: 1px;
+        margin-bottom: 3px;
+        background-color: $white;
+      }
     }
     &__desc {
+      width: 100%;
       font-size: 14px;
+      p:not(:last-child) {
+        margin-bottom: 8px;
+      }
     }
     &__desc:not(:last-child) {
       margin-bottom: 5px;
     }
   }
   //----------------------------------
-  // events
+  //          events
   //----------------------------------
-  .events {
-    .line {
-      margin: 40px auto;
+  .tabcontent {
+    &__desc {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+      p:not(:last-child) {
+        margin-bottom: 5px;
+      }
     }
-    .title-section {
-      text-align: center;
-    }
-    .button {
-      margin: 40px auto 0;
+    &__speaker {
+      display: block;
+      margin-top: 20px;
+      padding: 35px 15px 15px;
     }
   }
-
-  .tab {
-  }
-  .tab,
-  .tab-other {
-    width: calc(100% / 2 - 10px);
-    font-size: 12px;
-    line-height: 16px;
-  }
-
   .speaker {
+    &__avatar {
+      float: left;
+      width: 90px;
+      height: 100px;
+      margin-bottom: 15px;
+      margin-right: 25px;
+    }
+    &__desc {
+      clear: both;
+    }
+    .name {
+      padding-top: 35px;
+    }
+  }
+  .tabs {
+    margin-top: 10px;
+  }
+  .avatar {
+    height: 80px;
+  }
+  .name span {
+    font-size: 11px;
+  }
+
+  .other {
+    &__logo {
+      width: 50px;
+      height: 50px;
+      a {
+        font-size: 12px;
+      }
+    }
     &__name {
-      width: 50%;
+      font-size: 10px;
+      line-height: 14px;
       span {
+        margin-bottom: 2px;
         font-size: 12px;
       }
     }
   }
-  .avatar {
-    height: 90px;
-    margin-bottom: 14px;
+  .tab-other {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 10px;
+    min-height: 115px;
+    &__logo {
+      width: 50px;
+      height: 50px;
+    }
   }
   //----------------------------------
   // footer
@@ -595,22 +1004,55 @@
       flex-direction: column;
       padding: 20px 0;
     }
-    .button {
-      margin: 0 auto 15px;
-      width: 60%;
-      height: 50px;
-      font-size: 12px;
-    }
   }
-  .conference {
+  .conference,
+  .contacts {
     width: 100%;
   }
   .contacts {
-    width: 80%;
-  }
-  .contact,
-  .message {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
     text-align: center;
+  }
+
+  .message {
+    font-size: 13px;
+  }
+  .contact_mail .contact__link,
+  .contact_post .contact__addr {
+    font-size: 10px;
+  }
+  .contact {
+    &_mail {
+      margin-top: 10px;
+    }
+    &_post {
+      margin-top: 15px;
+    }
+    &_italic {
+      margin-top: 25px;
+      font-size: 9px;
+    }
+  }
+}
+//----------------------------------
+//                              400
+//----------------------------------
+
+@media (max-width: 400px) {
+  .tab {
+    width: calc(100% / 2 - 30px);
+    min-height: 120px;
+    margin-bottom: 10px;
+    &:nth-last-child(3) {
+      margin-bottom: 10px;
+    }
+    &.tab:nth-last-child(1),
+    .tab:nth-last-child(2) {
+      margin-bottom: -10px;
+    }
   }
 }

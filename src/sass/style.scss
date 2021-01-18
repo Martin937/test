@@ -1,8 +1,14 @@
+//------------------------------
+//          @import libs
+//------------------------------
 @import "libs/normalize";
 @import "libs/font";
 @import "base/variables";
 @import "base/mixins";
 @import "base/animations";
+//------------------------------
+//          general
+//------------------------------
 html {
   scroll-behavior: smooth;
 }
@@ -11,64 +17,93 @@ body {
   font-size: 20px;
   font-weight: 400;
 }
-
+.container {
+  padding-left: 93px;
+  padding-right: 65px;
+}
+//------------------------------
+//          title
+//------------------------------
 .title {
-  text-align: center;
-  font-size: 36px;
-  line-height: 66px;
+  font-size: 46px;
   font-weight: 300;
+  line-height: 42px;
+  letter-spacing: -0.2px;
+  text-align: center;
   span {
+    display: block;
+    padding-bottom: 0px;
     text-transform: uppercase;
   }
   &-section {
-    font-size: 26px;
+    font-size: 31px;
     font-weight: 600;
+    letter-spacing: -0.4px;
     text-transform: uppercase;
+    color: $main;
+    &_sponsored {
+      // font-size: 32px;
+      // letter-spacing: -1px;
+      margin-left: 5px;
+      text-align: center;
+    }
+    &_shedule {
+      width: 100%;
+      color: #fff;
+    }
+    &_event {
+      width: 100%;
+      margin-left: 5px;
+    }
   }
 }
-.container {
-  max-width: 90vw;
-  // max-width: 1170px;
-  margin: 0 auto;
-}
+//------------------------------
+//          button line
+//------------------------------
 .button {
-  width: 445px;
-  height: 85px;
-  text-transform: uppercase;
-  font-size: 24px;
+  display: block;
+  width: 561px;
+  height: 107px;
+  padding-bottom: 6px;
+  border: none;
+  border-radius: 107px;
+  font-size: 31px;
+  letter-spacing: -0.4px;
   font-weight: 600;
+  text-transform: uppercase;
   color: $white;
   background-color: $main;
-  border: none;
-  border-radius: 85px;
-  display: block;
   cursor: pointer;
+  &_sponsored {
+    @include centerX(auto, 98px);
+  }
+  &_event {
+    margin-left: calc(50% - 296px);
+  }
+  &_footer {
+    margin-left: 5px;
+    padding-bottom: 6px;
+  }
+
   &:hover {
-    background-color: $white;
-    color: $main;
+    color: $violent;
+    background: radial-gradient($gold, $main);
   }
 }
 .line {
   width: 100%;
-  height: 2px;
+  height: 4px;
+  &_shedule {
+    background-color: $white;
+  }
+  &_event {
+    margin: 97px auto 95px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
-
-.hide {
-  display: none;
-}
-.show {
-  display: block;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-}
-
+//------------------------------
+//          @import blocks
+//------------------------------
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/schedule";

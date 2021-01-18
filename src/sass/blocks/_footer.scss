@@ -1,37 +1,64 @@
 .footer {
-  min-height: 445px;
+  min-height: 565px;
   background-color: $black;
   &__wrap {
-    height: 415px;
-    padding: 45px 0 50px;
+    height: 530px;
     @include flex();
   }
   &__line {
-    height: 30px;
+    height: 35px;
     background-color: $main;
   }
 }
 .conference,
 .contacts {
-  width: calc(50% - 60px);
+  width: 50%;
 }
+
 .contacts {
-  @include flex(space-between, flex-start);
-  flex-direction: column;
   height: 100%;
+  padding: 61px 0 59px 31px;
   color: $white;
 }
 .message {
-  font-size: 24px;
+  font-size: 31px;
+  letter-spacing: -0.4px;
+  word-spacing: 0.7px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .contact {
+  &_mail {
+    margin-top: 47px;
+    .contact__link {
+      font-size: 25px;
+      letter-spacing: 0.2px;
+      color: $white;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  &_post {
+    margin-top: 68px;
+    .contact__addr {
+      font-size: 25px;
+      letter-spacing: 0.2px;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  &_italic {
+    margin-top: 92px;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    font-style: italic;
+  }
   &__link {
+    display: block;
     color: $white;
     text-decoration: none;
-    display: block;
-    line-height: 26px;
     &:hover {
       color: rgba(255, 255, 255, 0.5);
     }

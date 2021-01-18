@@ -35,10 +35,47 @@
 }
 
 @font-face {
-  font-family: "Myriad Pro";
-  src: url("../font/MyriadPro/MyriadPro-700.woff2") format("woff2"),
-    url("../font/MyriadPro/MyriadPro-700.woff") format("woff");
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-800.woff2") format("woff2"),
+    url("../font/Montserrat/Montserrat-800.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: "Myriad Pro";
+//   src: url("../font/MyriadPro/MyriadPro-700.woff2") format("woff2"),
+//     url("../font/MyriadPro/MyriadPro-700.woff") format("woff");
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: "Bitter";
+  src: url("../font/MyriadPro/transfonter/Bitter-Bold.woff2") format("woff2"),
+    url("../font/MyriadPro/transfonter/Bitter-Bold.woff") format("woff");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: url("../font/MyriadPro/transfonter/Bitter-ExtraBold.woff2")
+      format("woff2"),
+    url("../font/MyriadPro/transfonter/Bitter-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: url("../font/MyriadPro/transfonter/Bitter-Black.woff2") format("woff2"),
+    url("../font/MyriadPro/transfonter/Bitter-Black.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
